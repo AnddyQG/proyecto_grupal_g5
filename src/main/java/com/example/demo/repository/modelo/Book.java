@@ -27,7 +27,15 @@ public class Book {
 	private String title;
 	@Column(name = "book_price")
 	private BigDecimal price;
-	public Integer getId() {
+	public Book(int int1, String string, String string2, String string3, BigDecimal bigDecimal) {
+        this.id = int1;
+        this.autor = string;
+        this.isbn = string2;
+        this.title = string3;
+        this.price = bigDecimal;
+		
+    }
+    public Integer getId() {
 		return id;
 	}
 	public void setId(Integer id) {
